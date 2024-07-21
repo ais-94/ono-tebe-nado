@@ -44,7 +44,7 @@
   list-style-type: circle;
 }
 
-.header__menu-link_type_no-marker,
+.header__menu-item_type_no-marker,
 .footer__menu-link_active {
   list-style-type: none;
 }
@@ -137,11 +137,7 @@
   padding: 75px 50px 50px 78px;
 }
 
-.phrase_subline_space {
-  word-spacing: 0.84em;
-}
-
-.cover_subline_text {
+.cover__text {
   text-transform: uppercase;
   color: #fff;
   font-family: "Raleway", "Arial", sans-serif;
@@ -149,6 +145,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
+  word-spacing: 0.84em;
 }
 
 .cover_bet-button {
@@ -160,6 +157,10 @@
   border: 1px solid #ffffff;
   text-decoration: none;
   background-color: transparent;
+}
+
+.cover__text_button {
+  word-spacing: normal;
 }
 
 .lots_section {
@@ -181,46 +182,37 @@
   list-style-type: none;
 }
 
-.lots_card_type_film {
+.lots_card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
   min-height: 564px;
+  padding: 51px 40px 50px 40px;
+}
+
+.lots_card_type_film {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/card-lot-01.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 51px 40px 50px 40px;
 }
 
 .lots_card_type_book {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 334px;
-  min-height: 564px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/card-lot-02.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 51px 40px 50px 40px;
 }
 
 .lots_card_type_painting {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 334px;
-  min-height: 564px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/card-lot-03.jpg");
+    url("../images/card-lot-02.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 51px 40px 50px 40px;
 }
 
 .lots_card_contain_text_title {
